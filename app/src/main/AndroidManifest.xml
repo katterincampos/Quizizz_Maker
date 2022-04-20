@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quizizz_Maker">
         <activity
+            android:name=".Cuestionario_disponible"
+            android:exported="false" />
+        <activity
+            android:name=".Nota_final_estudiante"
+            android:exported="false" />
+        <activity
+            android:name=".Nota_Final"
+            android:exported="false" />
+        <activity
             android:name=".Creacion_Cuestionarios"
             android:exported="false" />
         <activity

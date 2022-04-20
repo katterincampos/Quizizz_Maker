@@ -7,4 +7,15 @@
     android:background="#43B4D4"
     tools:context=".Cuestionario_disponible">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="254dp"
+        android:layout_height="50dp"
+        android:text="@string/cuestionario_disponible"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="92dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

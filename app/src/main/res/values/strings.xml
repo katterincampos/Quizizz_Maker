@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Quizizz_Maker</string>
+
+    <string name="boton_estudiantil">Para el estudiante</string>
+    <string name="boton_docente">Para el docente</string>
+
+    <string name="boton_salir">SALIR</string>
+    <string name="boton_siguiente">SIGUIENTE</string>
+
+    <string name="boton_modificar">MODIFICAR</string>
+    <string name="boton_guardar">GUARDAR</string>
+    <string name="boton_eliminar">ELIMINAR</string>
+
+
+<string name="opcion_1">OPCION UNO</string>
+    <string name="opcion_2">OPCION DOS</string>
+    <string name="opcion_3">OPCION TRES</string>
+    <string name="opcion_4">OPCION CUATRO</string>
+</resources>

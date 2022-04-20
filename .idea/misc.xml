@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Quizizz_Maker/app/src/main/res/layout/activity_creacion_cuestionario.xml" value="0.25" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Quizizz_Maker/app/src/main/res/layout/activity_creacion_cuestionarios.xml" value="0.25" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Quizizz_Maker/app/src/main/res/layout/activity_especialidad_academica.xml" value="0.22" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Quizizz_Maker/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/Quizizz_Maker/app/src/main/res/layout/activity_segunda_pantalla.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

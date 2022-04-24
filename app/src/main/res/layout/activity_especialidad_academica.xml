@@ -8,7 +8,7 @@
     tools:context=".Especialidad_Academica">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_estudiante"
         android:layout_width="278dp"
         android:layout_height="104dp"
         android:backgroundTint="#FEB703"
@@ -20,10 +20,11 @@
         app:layout_constraintHorizontal_bias="0.879"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.389" />
+        app:layout_constraintVertical_bias="0.389"
+        tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_docentes"
         android:layout_width="282dp"
         android:layout_height="113dp"
         android:backgroundTint="#E72E68"

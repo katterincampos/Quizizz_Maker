@@ -10,7 +10,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="254dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
@@ -23,7 +23,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="254dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
@@ -95,7 +95,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="254dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
@@ -108,7 +108,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName5"
         android:layout_width="254dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"

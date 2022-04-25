@@ -26,7 +26,7 @@ public class BaseDeDatos extends SQLiteOpenHelper {
         if(accion.equals("modificar")){
             db.execSQL("update usuarios set nombre='"+ nomcues +"', Pregunta1='"+ pregunta1 +"', Respuesta1='"+ respuesta1 +"',Pregunta2='"+pregunta2+"', Respuesta2='"+respuesta2+"',Pregunta3='"+pregunta3+"', Respuesta3='"+respuesta3+"', Pregunta4='"+pregunta4+"',Respuesta4='"+respuesta4+"',Pregunta5='"+pregunta5+"', Respuesta5='"+respuesta5+"', Pregunta6='"+pregunta6+"',Respuesta6='"+respuesta6+"', Pregunta7='"+pregunta7+"', Respuesta7='"+respuesta7+"', Pregunta8='"+pregunta8+"', respuesta8='"+respuesta8+"', Pregunta9='"+pregunta9+"',Respuesta9='"+respuesta9+"', Pregunta10='"+pregunta10+"',Respuesta10='"+respuesta10+"' where idCuestionario='"+ id +"'");
         } else{
-            db.execSQL("insert into usuarios (nombre, direccion, telefono) values('"+ nom +"','"+ dir +"','"+ tel +"')");
+            db.execSQL("insert into usuarios (nomCuestionario, pregunta1, respuesta1, pregunta2, respuesta2,pregunta3, respuesta3, pregunta4, respuesta4, pregunta5, respuesta5, pregunta6, respuesta6, pregunta7, respuesta7, pregunta8, respuesta8, pregunta9, respuesta9, pregunta10, respuesta10) values('"+ nomcues +"','"+ pregunta1 +"','"+ respuesta1 +"','"+ pregunta2 +"','"+ pregunta3 +"','"+ respuesta3+"','"+ pregunta4 +"','"+ respuesta4 +"','"+ pregunta5 +"','"+ respuesta5 +"','"+ pregunta6 +"','"+ respuesta6 +"','"+ pregunta7 +"','"+ respuesta7 +"','"+ pregunta8 +"','"+ respuesta8 +"','"+ pregunta9 +"','"+ respuesta9 +"','"+ pregunta10 +"','"+ respuesta10 +"')");
         }
     }
     public void eliminarUsuario(String id){

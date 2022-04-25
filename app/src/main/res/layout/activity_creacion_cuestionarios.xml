@@ -8,7 +8,7 @@
     tools:context=".Creacion_Cuestionarios">
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/RespIncor1"
         android:layout_width="254dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.41" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/RespIncor2"
         android:layout_width="254dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.529" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/Pregunta"
         android:layout_width="289dp"
         android:layout_height="50dp"
         android:ems="10"
@@ -68,6 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:backgroundTint="#FEB703"
+        android:onClick="guardar_amigo"
         android:text="@string/boton_guardar"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -93,7 +94,7 @@
         app:layout_constraintVertical_bias="0.934" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/RespuestaCorrecta"
         android:layout_width="254dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -106,7 +107,7 @@
         app:layout_constraintVertical_bias="0.291" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/RespIncor3"
         android:layout_width="254dp"
         android:layout_height="48dp"
         android:ems="10"

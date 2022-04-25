@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class BaseDeDatos extends SQLiteOpenHelper {
     public static final String db_usuarios = "db_usuario";
     public static final int v = 1;
-    String sqlTabla = "create table usuarios(idCuestionario integer primary key autoincrement, nombreCuestionario text,pregunta1 text,respuesta1 text,pregunta2 text,respuesta2 text,pregunta3 text,respuesta3 text,pregunta4 text,respuesta4 text,pregunta5 text,respuesta5 text,pregunta6 text,respuesta6 text,pregunta7 text,respuesta7 text,pregunta8 text,respuesta8 text,pregunta9 text,respuesta9 text,pregunta10 text,respuesta10 text)";
+    String sqlTabla = "create table cuestionarios(idCuestionario integer primary key autoincrement, pregunta text,respuestaCorrecta text,respuesta2 text,respuesta3 text,respuesta4 text)";
 
     public BaseDeDatos(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, db_usuarios, factory, version);
@@ -21,20 +21,20 @@ public class BaseDeDatos extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
     }
-    public void guardarCuestionario(String nomcues, String pregunta1, String respuesta1 ,String pregunta2, String respuesta2,String pregunta3, String respuesta3,String pregunta4, String respuesta4,String pregunta5, String respuesta5,String pregunta6, String respuesta6,String pregunta7, String respuesta7,String pregunta8, String respuesta8,String pregunta9, String respuesta9,String pregunta10, String respuesta10, String accion, String id){
+    public void guardarCuestionario( String Pregunt, String RespCor ,String RespInc1, String RespInc2,String RespInc3, String accion, String Id){
         SQLiteDatabase db = getWritableDatabase();
         if(accion.equals("modificar")){
-            db.execSQL("update usuarios set nombre='"+ nomcues +"', Pregunta1='"+ pregunta1 +"', Respuesta1='"+ respuesta1 +"',Pregunta2='"+pregunta2+"', Respuesta2='"+respuesta2+"',Pregunta3='"+pregunta3+"', Respuesta3='"+respuesta3+"', Pregunta4='"+pregunta4+"',Respuesta4='"+respuesta4+"',Pregunta5='"+pregunta5+"', Respuesta5='"+respuesta5+"', Pregunta6='"+pregunta6+"',Respuesta6='"+respuesta6+"', Pregunta7='"+pregunta7+"', Respuesta7='"+respuesta7+"', Pregunta8='"+pregunta8+"', respuesta8='"+respuesta8+"', Pregunta9='"+pregunta9+"',Respuesta9='"+respuesta9+"', Pregunta10='"+pregunta10+"',Respuesta10='"+respuesta10+"' where idCuestionario='"+ id +"'");
+            db.execSQL("update cuestionarios set  pregunta='"+ Pregunt +"', respuestaCorrecta='"+ RespCor +"',respuestaInc1='"+RespInc1+"', respuestaInc2='"+RespInc2+"',respuestaInc3='"+RespInc3+"' where idCuestionario='"+ Id +"'");
         } else{
-            db.execSQL("insert into usuarios (nomCuestionario, pregunta1, respuesta1, pregunta2, respuesta2,pregunta3, respuesta3, pregunta4, respuesta4, pregunta5, respuesta5, pregunta6, respuesta6, pregunta7, respuesta7, pregunta8, respuesta8, pregunta9, respuesta9, pregunta10, respuesta10) values('"+ nomcues +"','"+ pregunta1 +"','"+ respuesta1 +"','"+ pregunta2 +"','"+ pregunta3 +"','"+ respuesta3+"','"+ pregunta4 +"','"+ respuesta4 +"','"+ pregunta5 +"','"+ respuesta5 +"','"+ pregunta6 +"','"+ respuesta6 +"','"+ pregunta7 +"','"+ respuesta7 +"','"+ pregunta8 +"','"+ respuesta8 +"','"+ pregunta9 +"','"+ respuesta9 +"','"+ pregunta10 +"','"+ respuesta10 +"')");
+            db.execSQL("insert into cuestionarios ( pregunta, respuestaCorrecta, respuesta2, respuesta3,respuesta4) values('"+ Pregunt +"','"+ RespCor +"','"+ RespInc1 +"','"+ RespInc2 +"','"+ RespInc3+"')");
         }
     }
-    public void eliminarUsuario(String id){
+    public void eliminarCuestionario(String id){
         SQLiteDatabase db = getWritableDatabase();
-        db.execSQL("delete from usuarios where idUsuario='"+ id +"'");
+        db.execSQL("delete from cuestionarios where idCuestionario='"+ id +"'");
     }
-    public Cursor consultarUsuarios(){
-        String sql = "select * from usuarios order by nombre asc";
+    public Cursor consultarCuestionarios(){
+        String sql = "select * from cuestionarios order by nombre asc";
         SQLiteDatabase db = getReadableDatabase();
         Cursor c = db.rawQuery(sql, null);
         return c;

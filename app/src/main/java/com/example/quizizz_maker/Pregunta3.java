@@ -15,12 +15,12 @@ public class Pregunta3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pregunta3);
 
-        final EditText tPregunta = (EditText) this.findViewById(R.id.NombreQuizz);
-        final EditText tCorrecto = (EditText) this.findViewById(R.id.Categotia);
-        final EditText tIncorrecto1 = (EditText) this.findViewById(R.id.NombreQuizz);
-        final EditText tIncorrecto2 = (EditText) this.findViewById(R.id.Categotia);
-        final EditText tIncorrecto3 = (EditText) this.findViewById(R.id.NombreQuizz);
-        Button btnSave = (Button) this.findViewById(R.id.siguiente);
+        final EditText tPregunta = (EditText) this.findViewById(R.id.pregunta3);
+        final EditText tCorrecto = (EditText) this.findViewById(R.id.respCorrecta_2_1);
+        final EditText tIncorrecto1 = (EditText) this.findViewById(R.id.respIncorrecta_3_1);
+        final EditText tIncorrecto2 = (EditText) this.findViewById(R.id.respIncorrecta_3_2);
+        final EditText tIncorrecto3 = (EditText) this.findViewById(R.id.respIncorrecta_3_3);
+        Button btnSave = (Button) this.findViewById(R.id.siguiente3);
 
         Bundle datosRecibidos = this.getIntent().getExtras();
 

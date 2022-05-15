@@ -41,7 +41,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:backgroundTint="#FEB703"
-        android:onClick="guardar_amigo"
         android:text="@string/boton_guardar"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"

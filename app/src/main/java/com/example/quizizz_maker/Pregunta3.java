@@ -22,21 +22,21 @@ public class Pregunta3 extends AppCompatActivity {
         final EditText tIncorrecto3 = (EditText) this.findViewById(R.id.respIncorrecta_3_3);
         Button btnSave = (Button) this.findViewById(R.id.siguiente3);
 
-        Bundle datosRecibidos = this.getIntent().getExtras();
+        Bundle datosRecibidos1 = this.getIntent().getExtras();
 
-        String nombre = datosRecibidos.getString("cNombre");
-        String categoria = datosRecibidos.getString("cCat");
-        String pregunta1 = datosRecibidos.getString("1cPregunta");
-        String respCorrect1_ = datosRecibidos.getString("1cCorrecto");
-        String respIncorrecta1_1 = datosRecibidos.getString("1cIncorrecto1");
-        String respIncorrecta1_2 = datosRecibidos.getString("1cIncorrecto2");
-        String respIncorrecta1_3 = datosRecibidos.getString("1cIncorrecto3");
+        String nombre = datosRecibidos1.getString("cNombre");
+        String categoria = datosRecibidos1.getString("cCat");
+        String pregunta1 = datosRecibidos1.getString("1cPregunta");
+        String respCorrect1_ = datosRecibidos1.getString("1cCorrecto");
+        String respIncorrecta1_1 = datosRecibidos1.getString("1cIncorrecto1");
+        String respIncorrecta1_2 = datosRecibidos1.getString("1cIncorrecto2");
+        String respIncorrecta1_3 = datosRecibidos1.getString("1cIncorrecto3");
 
-        String pregunta2 = datosRecibidos.getString("2cPregunta");
-        String respCorrect2 = datosRecibidos.getString("2cCorrecto");
-        String respIncorrecta2_1 = datosRecibidos.getString("2cIncorrecto1");
-        String respIncorrecta2_2 = datosRecibidos.getString("2cIncorrecto2");
-        String respIncorrecta2_3 = datosRecibidos.getString("2cIncorrecto3");
+        String pregunta2_ = datosRecibidos1.getString("2cPregunta");
+        String respCorrect2_1 = datosRecibidos1.getString("2cCorrecto");
+        String respIncorrecta2_1 = datosRecibidos1.getString("2cIncorrecto1");
+        String respIncorrecta2_2 = datosRecibidos1.getString("2cIncorrecto2");
+        String respIncorrecta2_3 = datosRecibidos1.getString("2cIncorrecto3");
 
         btnSave.setOnClickListener(new View.OnClickListener() {
 
@@ -49,29 +49,29 @@ public class Pregunta3 extends AppCompatActivity {
                 String RespInc3 = tIncorrecto3.getText().toString();
 
 
-                Bundle pasarDatos = new Bundle();
-                pasarDatos.putString("cNombre",nombre);
-                pasarDatos.putString("cCat",categoria);
-                pasarDatos.putString("1cPregunta", pregunta1);
-                pasarDatos.putString("1cCorrecto", respCorrect1_);
-                pasarDatos.putString("1cIncorrecto1", respIncorrecta1_1);
-                pasarDatos.putString("1cIncorrecto2", respIncorrecta1_2);
-                pasarDatos.putString("1cIncorrecto2", respIncorrecta1_3);
+                Bundle pasarDatos2 = new Bundle();
+                pasarDatos2.putString("cNombre",nombre);
+                pasarDatos2.putString("cCat",categoria);
+                pasarDatos2.putString("1cPregunta", pregunta1);
+                pasarDatos2.putString("1cCorrecto", respCorrect1_);
+                pasarDatos2.putString("1cIncorrecto1", respIncorrecta1_1);
+                pasarDatos2.putString("1cIncorrecto2", respIncorrecta1_2);
+                pasarDatos2.putString("1cIncorrecto3", respIncorrecta1_3);
 
-                pasarDatos.putString("2cPregunta", pregunta2);
-                pasarDatos.putString("2cCorrecto", respCorrect2);
-                pasarDatos.putString("2cIncorrecto1", respIncorrecta2_1);
-                pasarDatos.putString("2cIncorrecto2", respIncorrecta2_2);
-                pasarDatos.putString("2cIncorrecto2", respIncorrecta2_3);
+                pasarDatos2.putString("2cPregunta", pregunta2_);
+                pasarDatos2.putString("2cCorrecto", respCorrect2_1);
+                pasarDatos2.putString("2cIncorrecto1", respIncorrecta2_1);
+                pasarDatos2.putString("2cIncorrecto2", respIncorrecta2_2);
+                pasarDatos2.putString("2cIncorrecto3", respIncorrecta2_3);
 
-                pasarDatos.putString("3cPregunta", Preg);
-                pasarDatos.putString("3cCorrecto", RespCorr);
-                pasarDatos.putString("3cIncorrecto1", RespInc1);
-                pasarDatos.putString("3cIncorrecto2", RespInc2);
-                pasarDatos.putString("3cIncorrecto2", RespInc3);
+                pasarDatos2.putString("3cPregunta", Preg);
+                pasarDatos2.putString("3cCorrecto", RespCorr);
+                pasarDatos2.putString("3cIncorrecto1", RespInc1);
+                pasarDatos2.putString("3cIncorrecto2", RespInc2);
+                pasarDatos2.putString("3cIncorrecto3", RespInc3);
                 Intent siga = new Intent(Pregunta3.this, Pregunta4.class);
 
-                siga.putExtras(pasarDatos);
+                siga.putExtras(pasarDatos2);
                 startActivity(siga);
             }
         });

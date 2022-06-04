@@ -43,23 +43,23 @@ public class Pregunta2 extends AppCompatActivity {
                 String RespInc3 = tIncorrecto3.getText().toString();
 
 
-                Bundle pasarDatos = new Bundle();
-                pasarDatos.putString("cNombre",nombre);
-                pasarDatos.putString("cCat",categoria);
-                pasarDatos.putString("1cPregunta", pregunta1);
-                pasarDatos.putString("1cCorrecto", respCorrect1_);
-                pasarDatos.putString("1cIncorrecto1", respIncorrecta1_1);
-                pasarDatos.putString("1cIncorrecto2", respIncorrecta1_2);
-                pasarDatos.putString("1cIncorrecto2", respIncorrecta1_3);
+                Bundle pasarDatos1 = new Bundle();
+                pasarDatos1.putString("cNombre",nombre);
+                pasarDatos1.putString("cCat",categoria);
+                pasarDatos1.putString("1cPregunta", pregunta1);
+                pasarDatos1.putString("1cCorrecto", respCorrect1_);
+                pasarDatos1.putString("1cIncorrecto1", respIncorrecta1_1);
+                pasarDatos1.putString("1cIncorrecto2", respIncorrecta1_2);
+                pasarDatos1.putString("1cIncorrecto3", respIncorrecta1_3);
 
-                pasarDatos.putString("2cPregunta", Preg);
-                pasarDatos.putString("2cCorrecto", RespCorr);
-                pasarDatos.putString("2cIncorrecto1", RespInc1);
-                pasarDatos.putString("2cIncorrecto2", RespInc2);
-                pasarDatos.putString("2cIncorrecto2", RespInc3);
+                pasarDatos1.putString("2cPregunta", Preg);
+                pasarDatos1.putString("2cCorrecto", RespCorr);
+                pasarDatos1.putString("2cIncorrecto1", RespInc1);
+                pasarDatos1.putString("2cIncorrecto2", RespInc2);
+                pasarDatos1.putString("2cIncorrecto3", RespInc3);
                 Intent siga = new Intent(Pregunta2.this, Pregunta3.class);
 
-                siga.putExtras(pasarDatos);
+                siga.putExtras(pasarDatos1);
                 startActivity(siga);
             }
         });

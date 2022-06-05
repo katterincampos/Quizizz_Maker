@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -16,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 new Handler().postDelayed(new Runnable() {
     @Override
     public void run() {
-        Intent principal = new Intent(MainActivity.this,Segunda_Pantalla.class);
+        Intent principal = new Intent(MainActivity.this, Ayuda1.class);
         startActivity(principal);
         finish();
     }

@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Jose Lobos/AndroidStudioProjects/Quizizz_Maker/app/src/main/res/layout/activity_creacion_cuestionarios.xml" value="0.15" />
+        <entry key="..\:/Users/Jose Lobos/AndroidStudioProjects/Quizizz_Maker/app/src/main/res/layout/activity_ayuda1.xml" value="0.17083333333333334" />
+        <entry key="..\:/Users/Jose Lobos/AndroidStudioProjects/Quizizz_Maker/app/src/main/res/layout/activity_ayuda2.xml" value="0.17083333333333334" />
+        <entry key="..\:/Users/Jose Lobos/AndroidStudioProjects/Quizizz_Maker/app/src/main/res/layout/activity_ayuda3.xml" value="0.17083333333333334" />
+        <entry key="..\:/Users/Jose Lobos/AndroidStudioProjects/Quizizz_Maker/app/src/main/res/layout/activity_ayuda4.xml" value="0.17083333333333334" />
+        <entry key="..\:/Users/Jose Lobos/AndroidStudioProjects/Quizizz_Maker/app/src/main/res/layout/activity_creacion_cuestionarios.xml" value="0.22" />
         <entry key="..\:/Users/Jose Lobos/AndroidStudioProjects/Quizizz_Maker/app/src/main/res/layout/activity_cuestionario_disponible.xml" value="0.1" />
         <entry key="..\:/Users/Jose Lobos/AndroidStudioProjects/Quizizz_Maker/app/src/main/res/layout/activity_especialidad_academica.xml" value="0.17" />
         <entry key="..\:/Users/Jose Lobos/AndroidStudioProjects/Quizizz_Maker/app/src/main/res/layout/pregunta1.xml" value="0.25" />

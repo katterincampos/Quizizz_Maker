@@ -7,9 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class Segunda_Pantalla extends AppCompatActivity {
 Button docentes;
 Button estudiantes;
+FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,4 +39,5 @@ Button estudiantes;
 
 
     }
+    
 }

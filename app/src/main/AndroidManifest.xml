@@ -40,6 +40,18 @@
             android:name=".Especialidad_Academica"
             android:exported="false" />
         <activity
+            android:name=".Ayuda1"
+            android:exported="false" />
+        <activity
+            android:name=".Ayuda2"
+            android:exported="false" />
+        <activity
+            android:name=".Ayuda3"
+            android:exported="false" />
+        <activity
+            android:name=".Ayuda4"
+            android:exported="false" />
+        <activity
             android:name=".Segunda_Pantalla"
             android:exported="false" />
         <activity
